@@ -13,8 +13,8 @@ Citizen.CreateThread(function()
 					DisplayHelpText('Press ~INPUT_CONTEXT~ to begin hacking')
 					if GetIsControlJustReleased(51) and (UpdateOnscreenKeyboard() ~= 0)then
 							TriggerEvent("mhacking:show") --This line is where the hacking even starts
-							TriggerEvent("mhacking:start",3,19,mycb) --This line is the difficulty and tells it to start. First number is how long the blocks will be the second is how much time they have is.
-						--local EnteredCode = KeyboardInput('Enter the Code', '', Code:len() + 10, false)
+							TriggerEvent("mhacking:start",7,19,mycb) --This line is the difficulty and tells it to start. First number is how long the blocks will be the second is how much time they have is.
+						--local EnteredCode = KeyboardInput('Enter the Code', '', Code:len() + 10, false) --This line is being ommited because I don't want to use the code to open the vault.
 						if EnteredCode then
 							if EnteredCode:lower() == Code:lower() then
 								drawNotification('~g~The entered Code is correct!')
